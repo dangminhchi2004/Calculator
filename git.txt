@@ -1,0 +1,38 @@
+git Bash here
+git init: Biến thư mục thành thùng chứa cục bộ
+git status: xem trạng thái thùng chứa
+touch .gitignore: tạo file ẩn các file không cần đưa lên github(bin, obj, .vs)
+git add . : add tất cả tập tin thư mục ở vùng làm việc sang trạng thái sẵn sàng hay staging area(đỏ -> xanh)
+git commit -m "Ghi chú" : đưa dữ liệu vào thùng chứa cục bộ
+git remote add origin "địa chỉ thùng chứa trên github" : tạo liên kết thùng chứa cục bộ và thùng chứa trên github (origin:tên liên kết mặc định)
+git push origin master:đẩy dữ liệu lên github
+
+Cập nhật thay đổi:
+git status: xem lại các thay đổi
+git diff Tên file: xem thay đổi chi tiết của file
+git add . : chuyển sang staging area(đỏ -> xanh)
+git commit -m "Ghi chú update" : đưa dữ liệu vào thùng chứa cục bộ
+git push origin master: đẩy update lên github
+
+Lấy(clone) project về:
+git Bash here
+git clone Địa chỉ thùng chứa github
+git add tên tập tin : thêm tập tin cụ thể chuyển sang staging area
+
+cd Tên thư mục :Đi vào thư mục thùng chứa
+
+git pull origin master:Cập nhật thay đổi từ github về máy local
+
+Tạo nhánh:
+git branch: xem nhánh đang đứng
+git branch tên nhánh: tạo nhánh
+git checkout tên nhánh: chuyển sang nhánh chỉ định
+
+Trộn dữ liệu từ nhánh phụ sang nhánh master:tạo pull requests
+base: nhánh master
+compare: nhánh phụ
+
+Xử lý xung đột khi trộn nhánh phụ vào nhánh chính master:
+git merge tên nhánh phụ: sau đó vào code xem sự khác biệt với nhánh chính rồi cập nhật vào nhánh chính
+
+Xóa tài khoản git cũ: vàoCredential Manager > Windows Credentials > xóa tất cả liên quan đến github
